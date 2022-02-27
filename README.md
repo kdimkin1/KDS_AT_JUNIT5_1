@@ -9,13 +9,24 @@ See details:
 ```bash
 JUnit5:
 
+1) "Test examples with DataProviders"
+src/test/java/ru/kds/tests/junit5/ParametreziedTestAPFormFillTestsWithPOAndVars.java
+ csvSourceapfSuccessFillTest
+ mixedArgumentsapfSuccessFillTest
+
+2) "JUnitCore.java class modified for support @BeforeEach / @AfterEach, @BeforeAll/AfterAll"
+src/test/java/ru/kds/tests/junit5/SimpleTest.java
+src/test/java/ru/kds/tests/junit5/JunitCore.java
+
 Allure: 
-1) "Лямбда шаги через step (name, () -> {})"
-  AutomationPracticeFormFillTestsWithPOAndRandomVars.java
-  
-```
-
-
+1) "Чистый Selenide (с Listener)"
+  src/test/java/ru/kds/tests/allure/SelenideTestWithListener.java
+2) "Лямбда шаги через step (name, () -> {})" 
+ src/test/java/ru/kds/tests/allure/StepsTest.java
+ testLambdaSteps
+3) "Шаги с аннотацией @Step"
+ src/test/java/ru/kds/tests/allure/StepsTest.java
+ testLambdaSteps
 
 
 

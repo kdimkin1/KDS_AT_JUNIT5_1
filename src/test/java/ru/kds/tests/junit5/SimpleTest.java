@@ -1,13 +1,29 @@
 package ru.kds.tests.junit5;
 
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @DisplayName("Класс с простыми тестами")
 public class SimpleTest {
+
+    @BeforeAll
+    void simpleBeforeAll() {
+        System.out.println("Annotation @BeforeAll executed.");
+    }
+    @AfterAll
+    void simpleAfterAll() {
+        System.out.println("Annotation @AfterAll executed.");
+    }
+    @BeforeEach
+    void simpleBeforeEach() {
+        System.out.println("Annotation @BeforeEach executed.");
+    }
+    @AfterEach
+    void simpleAfterEach() {
+        System.out.println("Annotation @AfterEach executed.");
+    }
+
 
     @Test
     @DisplayName("Ожидаемо зеленый тест")
