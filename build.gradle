@@ -12,7 +12,14 @@ def allureVersion = "2.14.0",
     selenideVersion = "6.3.3",
     junitVersion = "5.8.2",
     slf4jVersion = "1.7.32",
-    javafakerVersion = "1.0.2"
+    javafakerVersion = "1.0.2",
+    assertjVersion = "3.22.0",
+    pdfTestVersion = "1.7.0",
+    xlsTestVersion = "1.4.0",
+    opencsvVersion = "5.6",
+    gsonVersion = "2.9.0",
+    jacksonVersion = "2.13.1",
+    jacksonDataBindVersion = "2.13.2"
 
 allure {
     version = allureVersion
@@ -33,8 +40,14 @@ dependencies {
             "io.rest-assured:rest-assured:4.3.1",
             "io.qameta.allure:allure-rest-assured:$allureVersion",
             "org.aeonbits.owner:owner:1.0.12",
-            "org.assertj:assertj-core:3.19.0",
-            "org.junit.jupiter:junit-jupiter:$junitVersion")
+            "org.assertj:assertj-core:$assertjVersion",
+            "org.junit.jupiter:junit-jupiter:$junitVersion",
+            "com.codeborne:pdf-test:$pdfTestVersion",
+            "com.codeborne:xls-test:$xlsTestVersion",
+            "com.opencsv:opencsv:$opencsvVersion",
+            "com.google.code.gson:gson:$gsonVersion",
+            "com.fasterxml.jackson.core:jackson-core:$jacksonVersion",
+            "com.fasterxml.jackson.core:jackson-databind:$jacksonDataBindVersion")
     testRuntimeOnly(
             "org.slf4j:slf4j-simple:$slf4jVersion",
             "org.junit.jupiter:junit-jupiter-engine:$junitVersion")

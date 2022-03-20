@@ -20,13 +20,19 @@ src/test/java/ru/kds/tests/junit5/JunitCore.java
 
 Allure: 
 1) "Чистый Selenide (с Listener)"
-  src/test/java/ru/kds/tests/allure/SelenideTestWithListener.java
+src/test/java/ru/kds/tests/allure/SelenideTestWithListener.java
 2) "Лямбда шаги через step (name, () -> {})" 
- src/test/java/ru/kds/tests/allure/StepsTest.java
+src/test/java/ru/kds/tests/allure/StepsTest.java
  testLambdaSteps
 3) "Шаги с аннотацией @Step"
- src/test/java/ru/kds/tests/allure/StepsTest.java
+src/test/java/ru/kds/tests/allure/StepsTest.java
  testLambdaSteps
+
+Work with Files:
+1) "один zip архив несколько разных файлов - pdf, xlsx, csv."
+src/test/java/ru/kds/tests/files/FilesParsingZipHWTest.java
+2) "разбор json  файла библиотекой Jackson"
+src/test/java/ru/kds/tests/files/JacksonJsonHWTest.java
 
 
 
